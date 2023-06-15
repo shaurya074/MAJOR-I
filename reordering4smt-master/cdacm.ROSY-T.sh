@@ -26,7 +26,7 @@ else
 	do
 		while kill -0 $job >/dev/null 2>&1
 		do
-			echo -n 'In Process'
+			echo -n "In Process"
 			sleep 3
 		done
 	done
