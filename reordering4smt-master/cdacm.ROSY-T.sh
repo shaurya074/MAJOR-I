@@ -1,9 +1,3 @@
-#	       (c) Centre for Development of Advanced Computing, Mumbai
-#	    Knowledge Based Computer Systems Division. All Rights Reserved. 
-
-#!/bin/sh
-#Created by Raj Nath Patel on Mar 21, 2013
-
 WORKDIR=`dirname $0`
 
 if [ $# != 1 ]
@@ -32,7 +26,7 @@ else
 	do
 		while kill -0 $job >/dev/null 2>&1
 		do
-			echo -n '.'
+			echo -n 'In Process'
 			sleep 3
 		done
 	done
@@ -40,5 +34,5 @@ else
 	cat  $WORKDIR/tmp/$filename.reo |tr -s ' ' >  $WORKDIR/tmp/$filename.reo.clean
 	sed 's/^ //' < $WORKDIR/tmp/$filename.reo.clean > $path/$base.reordered.$ext		
 	#rm -rf $1.*
-	echo -e "\nCheers!"
+	echo -e "\nSuccessfully Done"
 fi
