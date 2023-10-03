@@ -1,10 +1,4 @@
-#	       (c) Centre for Development of Advanced Computing, Mumbai
-#	    Knowledge Based Computer Systems Division. All Rights Reserved. 
-
 #/usr/lib/perl
-##Craeted by Ananthakrishnan Ramanathan & Ritesh M. Shah
-##Modified by Raj Nath Patel Dec 2011-current
-
 #use strict;
 #use warnings;
 
